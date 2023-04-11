@@ -2,18 +2,10 @@ import telebot
 from config import keys, TOKEN
 from utils import APIException, Converter
 
-# import requests
+
 
 
 bot = telebot.TeleBot(TOKEN)
-
-# @bot.message_handler()
-# def echo_test(message: telebot.types.Message):
-#     bot.send_message(message.chat.id, 'Hello')
-
-# @bot.message_handler(commands=['start', 'help'])
-# def help(message: telebot.types.Message):
-
 
 @bot.message_handler(commands=['start', 'help'])
 def help(message: telebot.types.Message):
